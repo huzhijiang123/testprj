@@ -1,4 +1,7 @@
-# testprj
-a test project
-test test 111
-add by huzhijiang
+a test project add by huzhijiang
+TOC
+
+test_restful.py
+===============
+
+Illustrate the usage of restful API
