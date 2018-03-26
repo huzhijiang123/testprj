@@ -25,12 +25,9 @@ class ImageManager(object):
     def delete(self, imageid):
         """Delete an image."""
         url = "/images/%s" % imageid
-        resp, body = self.client.delete(url) 
+        resp, body = self.client.delete(url)
+        print(resp) 
 
 
-client = Client("http://10.20.11.2:35357")
+client = Client("http://127.0.0.1:35357")
 client.images.delete("xxxxxxxx") # This is a Restful call to server URL : http://10.20.11.2:35357/images/xxxxxxxx  DELETE
-
-
-
-
