@@ -36,8 +36,8 @@ def main():
 
         #from paste import deploy
         #server.start(deploy.loadapp("config:/etc/paste.ini", name="server"), default_port=35357)
-        server.start(router.API(wsgi.APIMapper()), default_port=35357)
-
+        server.start(router.API.factory(None), default_port=35357)
+        # Or server.start(router.API(wsgi.APIMapper()), default_port=35357)
         server.wait()
     except:
         fail()
